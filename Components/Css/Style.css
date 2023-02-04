@@ -1,0 +1,154 @@
+@import url(/Components/css/bootstrap.css);
+/* roots */
+:root{
+    --theme-color: #9b0000;
+    --secondary-color: #f50;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4rem;
+    background-image: linear-gradient(228deg, var(--theme-color) 5%, var(--secondary-color) 5% 10%,
+    #ffffff 10% 69%, var(--theme-color) 69% 83%, var(--secondary-color) 83% 91%, var(--theme-color) 91% 100%);
+}
+
+.sec-left{
+    padding-bottom: 2rem;
+    font-size:large bold;
+}
+
+li{
+    list-style: none;
+}
+
+hr{
+    background-color: var(--theme-color);
+    height: 4px;
+    border: 1px solid var(--theme-color);
+    border-radius: 10px;
+}
+
+.big-avatar-pic{
+    vertical-align: middle;
+    object-fit: cover;
+    width: 350px;
+    height: 350px;
+    background-color: tomato;
+    background-image: linear-gradient(45deg, var(--theme-color) 50%, #ffffff 50%);
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 15rem;
+}
+
+.input-btn{
+    padding: 0 11rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn{
+    font-family: Roboto;
+    width: 6rem;
+    justify-self: Center;
+    color: #ffffff;
+    border-radius: .5rem;
+}
+
+.btn:hover{
+    color: var(--theme-color);
+    background-color:var(--secondary-color)
+}
+
+.theme-color{
+    color: var(--theme-color);
+}
+
+.theme-color-bg{
+    background-color: var(--theme-color);
+}
+
+.modal-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #2121217b;
+    position: absolute;
+    top: -100%;   
+    transition: all 1.6s ease;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 2rem;
+    align-items: center;
+    color: white;
+    background: rgb(28, 27, 27);
+    box-shadow: rgb(99, 96, 96) 2px 2.4px 1px;
+    height: 75%;
+    width: 60%;
+    border-radius: 4rem;
+    position: absolute;
+    font-size: 22px;
+    font-family: arial;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+
+.modal-btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-center;
+    flex-direction: column;
+    padding-top: 28rem;
+}
+
+.x{
+    display: flex;
+    padding-left: 50rem;
+    color: tomato;
+    cursor: pointer;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.saveBtn{
+   margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    height: 3rem'
+}
+
+.saveBtn::hover{
+    background-color: var(--secondary-color);
+}
+
+.grove-logo{
+    position: absolute;
+    top: 50%;
+    left: 32%;
+    width: 200px;
+    height: 200px;
+    border-radius: 4rem;
+    border: solid 5px var(--secondary-color);
+}

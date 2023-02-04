@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Components/Css/Style.css">
+    <script defer src="./Scripts/app.js"></script>
+</head>
+<body class="d-flex flex-column">
+    <div class="all d-flex flex-row p-5 align-content-center justify-content-center">
+        <section class="'sec-left pb-5">
+            <img class="big-avatar-pic" id="avatar" src="./Components/pics/avatar.png" alt="">
+            <div class="co-logo"> <img class ="grove-logo" src="./Components/pics/grove.png" alt=""></div>
+        </section>
+        <section class="sec-right d-flex flex-column align-item-center justify-content-center">
+            <h1 id="namePosition">PHIL Janet anderson</h1>
+            <p class="align-self-center theme-color" id="salesPosition">Sales Representative</p>
+            <span class="d-flex ps-2"><img src="./Components/pics/telphone icon.png" alt=""> +123-456-789</span>
+            <hr>
+            <span><img src="./Components/pics/main icone.png" alt=""> Hello@reallygreatsite.com</span>
+            <hr>
+            <span><img src="./Components/pics/wen Icon.png" alt=""> www.reallygreatsite.com</span>
+            <hr>
+            <span><img src="./Components/pics/Locatioton icon.png" alt="">Los Santos Grove Street block Jonson's Resident</span>
+            
+        </section>
+    </div>
+    
+    <section>
+        <div class="input-btn">
+            <button class="btn theme-color-bg">My Inputs</button>
+        </div>
+        <div class="modal-parent" id="modalParent">
+            <div class="modal" id="modal">
+                <span class="x">X</span>
+                <h3>Chose Your Prefers</h3>
+                <ul class="d-flex flex-column gap-4">
+                    <li><label for="favcolor">Select Main Theme color:</label>
+                        <input type="color" id="mainColorInout" value="#ff0000"></li>
+                    <li><label for="favcolor">Select secondary Theme color:</label>
+                        <input type="color" id="secondaryColorInput" value="#ff0000"></li>
+                    <li>UserName: <input class="form-control" type="text" id="userName"> </li>
+                    </ul>
+                <div class="avator-select">
+                    <label for="avat1">
+                        <img class="avatar" src="./Components/pics/avatar.png" alt="">
+                        <input name="avatar" id="avat1" type="radio">
+                        <img class="avatar" src="./Components/pics/avatar2.png" alt="">
+                        <input name="avatar" id="avat2" type="radio">
+                        <img class="avatar" src="./Components/pics/avatar3.png" alt="">
+                        <input name="avatar" id="avat3" type="radio">
+                        <img class="avatar" src="./Components/pics/avatar4.png" alt="">
+                        <input name="avatar" id="avat4" type="radio">
+                    </label>
+                </div>
+                <button class="btn primery-btn saveBtn" id="saveBtn">Save</button>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
